@@ -1,0 +1,25 @@
+results for 20 runs
+
+mushroom | precision: 1.0
+-----------------------------------------------------------------------------
+| expected \ prediction  |           p            |            e            |
+-----------------------------------------------------------------------------
+|           p            |         1563.4         |           0.0           |
+-----------------------------------------------------------------------------
+|           e            |          0.0           |          1686.6         |
+-----------------------------------------------------------------------------
+
+breast-cancer | precision: 0.646
+-----------------------------------------------------------------------------
+| expected \ prediction  |  no-recurrence-events  |    recurrence-events    |
+-----------------------------------------------------------------------------
+|  no-recurrence-events  |         61.65          |          18.95          |
+-----------------------------------------------------------------------------
+|   recurrence-events    |         21.75          |          12.65          |
+-----------------------------------------------------------------------------
+
+    -- drzewa są zbytnio rozbudowane, i nadmiernie dopasowane do zbioru uczacego, ale mimo tego szybkość zgadywania jest dość wysoka
+    -- brak wsparcia atrybutów ciągłych
+    -- źle działa dla zestawów o małej liczbie atrybutów
+    -- wyniki dość mocno zależą od jakości danych(dataset`u)
+    -- problem diagnostyki raku jest zdecydowanie bardziej złożony, więc skuteczność jest niższa
